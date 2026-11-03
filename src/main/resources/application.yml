@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: product-service
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+  endpoint:
+    health:
+      show-details: always
